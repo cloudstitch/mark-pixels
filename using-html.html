@@ -14,6 +14,7 @@
         <td>Description</td>
         <td>ArtistNotes</td>
         <td>Video Link as text</td>
+<td>Video Link as link</td>
         <td>Website</td>
         <td>Credit</td>
         <td>Artist Biography</td>
@@ -27,7 +28,8 @@
           <td connect="col(Longitude)">-71.323</td>
           <td connect="col(Description)">Something or other</td>
           <td connect="col(ArtistNotes)">Cool piece</td>
-          <td connect="col(VideoLink)">video link as text</a></td>
+          <td connect="col(VideoLink)">video link as text</td>
+          <td><a data-cts='this {"attribute": "href"} :is sheet | col(VideoLink);'>link</a></td>
           <td connect="col(Website)">website</td>
           <td connect="col(Credit)">credit</td>
           <td connect="col(ArtistBiography)">Artist bio</td>
