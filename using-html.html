@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src="http://cloudstitch.io/release/cloudstitch.js" appkey="61b8e5c916f75c1828dd3a2c9520234e"></script>
+    <link type="cts/gsheet" name="sheet" href="auto" read="public" write="public" />
+  </head>
+  <body>
+    <table border=1>
+      <thead>
+        <td>Episode No</td>
+        <td>Title</td>
+        <td>Address</td>
+        <td>Latitude</td>
+        <td>Longitude</td>
+        <td>Description</td>
+        <td>ArtistNotes</td>
+        <td>Video Link as text</td>
+        <td>Website</td>
+        <td>Credit</td>
+        <td>Artist Biography</td>
+      </thead>
+      <tbody connect="rows">
+        <tr>
+          <td connect="col(EpisodeNo)">STO 1</td>
+          <td connect="col(Title)">Weirdo Records</td>
+          <td connect="col(Address)">123 Cherry Ln</td>
+          <td connect="col(Latitude)">42.123</td>
+          <td connect="col(Longitude)">-71.323</td>
+          <td connect="col(Description)">Something or other</td>
+          <td connect="col(ArtistNotes)">Cool piece</td>
+          <td connect="col(VideoLink)">video link as text</a></td>
+          <td connect="col(Website)">website</td>
+          <td connect="col(Credit)">credit</td>
+          <td connect="col(ArtistBiography)">Artist bio</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>

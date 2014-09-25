@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://cloudstitch.io/release/cloudstitch.js" appkey="61b8e5c916f75c1828dd3a2c9520234e"></script>
+    <link type="cts/gsheet" name="sheet" href="auto" read="public" write="public" />
+  </head>
+  <body>
+    look at the javascript console.
+  <script>
+    function doit() {
+      console.log("Doing it!");
+      CTS.engine.status.allRealized.then(function() {
+        console.log("All the spreadsheet data has been loaded");
+        console.log(CTS.engine.forrest.trees.sheet.value);
+      });
+    }
+
+    $(function() {
+      // Small bug I found. Will go away soon so you don't have to do this.
+      setTimeout(doit, 3000);
+    });
+  </script>
+  </body>
+</html>
